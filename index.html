@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Team - Department of XYZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Faculty Team – Department of XYZ</h1>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="Dr. Anitha Kumar">
+      <h3>Dr. Anitha Kumar</h3>
+      <p>Computer Science Dept.</p>
+      <p>Passionate about AI and machine learning.</p>
+      <button onclick="scrollToForm()">Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="Mr. Rahul Das">
+      <h3>Mr. Rahul Das</h3>
+      <p>ECE Dept.</p>
+      <p>Dedicated robotics researcher and educator.</p>
+      <button onclick="scrollToForm()">Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="Prof. Kavita Reddy">
+      <h3>Prof. Kavita Reddy</h3>
+      <p>Mechanical Dept.</p>
+      <p>Expert in thermal engineering and design.</p>
+      <button onclick="scrollToForm()">Contact</button>
+    </div>
+  </div>
+
+  <h2>Contact a Faculty Member</h2>
+  <form id="contactForm" onsubmit="return validateForm()">
+    <label>Full Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea id="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
